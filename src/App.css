@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  box-shadow: 4px 4px rgb(197, 216, 223);
+  padding-top: 30px;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.forecastDay {
+  border: 1px solid transparent;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 5px;
+  max-height: 50%;
+  scale: 0.8;
+  cursor: pointer;
+  width: 30%;
+}
+.title-chart {
+  cursor: pointer;
+  position: absolute;
+  top:-40px;
+  left: 30px;
+}
+.adfdf{
+  color: #000000;
+}
+.forecastDay:hover {
+  
+  border: 1px solid rgb(177, 194, 201);
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+  background-color: rgb(243, 251, 252);
+  box-shadow: 3px 3px #c6e5ec;
+    
+}
+.forecast-hour-item{
+  scale:0.8;
+  /* border: 1px solid ; */
+  gap:-30px;
+  padding: 0;
+  cursor: pointer;
+  
+}
+.weather-forecast {
+  transition: all 3s ease;
+}
+.detail-hour-block{
+  position: fixed;
+  top: 150px;
+  left: 200px;
+  width: 400px;
+  border: 2px solid rgb(215, 234, 245);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  z-index: 100;
+  color: #403e3e;
+  
+  font-weight: 600;
+  transition: all 0.3s ease; 
+  opacity: 5;
+}
+.detail-hour-item {
+  text-align: left;
+}
